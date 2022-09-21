@@ -2,7 +2,7 @@ name: Access app streamlit
 
 on:
   schedule:
-    - cron: '0,5 0,12,15 * * 1,3,5'
+    - cron: '0,5,15 0,15 * * *'
 
 jobs:
   access_app:
