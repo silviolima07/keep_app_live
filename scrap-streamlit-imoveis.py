@@ -17,7 +17,7 @@ import os
 options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 print("\nCriando driver chrome\n")
-driver  = webdriver.Chrome(r".\driver\chromedriver.exe", options=options)
+driver  = webdriver.Chrome(r"driver\chromedriver.exe", options=options)
 time.sleep(10)
 
 #%%
