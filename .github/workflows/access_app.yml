@@ -3,7 +3,7 @@ name: Access app streamlit
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '28 12,13,14 * * *'
+    - cron:  '0 12,18,0 * * *'
 
 jobs:
   access_app:
