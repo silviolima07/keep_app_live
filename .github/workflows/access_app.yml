@@ -1,4 +1,4 @@
-name: Access app streamlit to keep it live
+name: Access app streamlit
 
 on:
   workflow_dispatch:
@@ -25,6 +25,16 @@ jobs:
       run: pip install requests
     - name: Install lib bs4
       run: pip install bs4
+      
+    - name: install chromedriver
+      run: |
+          sudo apt-get install unzip
+          wget -N http://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          chmod +x chromedriver
+          sudo mv -f chromedriver /usr/local/share/chromedriver
+          sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+          sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
       
     - name: app_imoveis
       run: |
