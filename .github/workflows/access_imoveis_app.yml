@@ -1,4 +1,4 @@
-name: Access app streamlit
+name: Access app imoveis streamlit
 
 on:
   schedule:
