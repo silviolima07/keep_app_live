@@ -4,7 +4,7 @@ on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     # Executar todas segundas-feiras (1) e quintas-feiras (4) as 9h e 18h
-    - cron:  '0 9,18 * * 1,4'
+    - cron:  '5 12,21 * * 1,4'
 jobs:
   access_app:
 
