@@ -6,7 +6,7 @@ on:
     # Executar todas segundas-feiras (1) e quintas-feiras (4) as 9h e 18h
     - cron:  '5 12,21 * * 1,4'
 jobs:
-  access_app:
+  access_app_indeed:
 
     runs-on: ubuntu-latest
 
@@ -41,3 +41,4 @@ jobs:
     - name: app_imoveis
       run: |
           pwd;ls;python scrap-streamlit-indeed.py
+          
